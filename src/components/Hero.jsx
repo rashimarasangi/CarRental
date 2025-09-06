@@ -25,10 +25,11 @@ const Hero = () => {
             <label htmlFor='retun-date'>Return Date</label>
             <input type="date"  id="return-date" className='text-sm text-gray-500' required/>
            </div>
-           <button className='flex items-center gap-1 px-9 py-3 bg-primary hover:bg-primary-dull  text-white rounded-full max-sm:mt-4 justify-center cursor-pointer'>
+           
+        </div>
+        <button className='flex items-center gap-1 px-9 py-3 bg-primary hover:bg-primary-dull  text-white rounded-full max-sm:mt-4 justify-center cursor-pointer'>
             <img src={assets.search_icon} alt="search" className='brightness-300'/>
             Search</button>
-        </div>
       </form>
       <img src={assets.main_car} alt="car" className='max-h-74' />
     </div>
