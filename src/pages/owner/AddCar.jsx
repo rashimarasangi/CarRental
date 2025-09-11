@@ -38,7 +38,11 @@ const AddCar = () => {
           </label>
           <p className='text-sm text-gray-500'>Upload a picture of your car</p>
         </div>
-
+        {/* car brand and model */}
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'> 
+          <div></div>
+          <div></div>
+        </div>
       </form>
     </div>
   )
