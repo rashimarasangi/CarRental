@@ -44,9 +44,9 @@ const Dashboard = () => {
          ))}
       </div>
 
-       <div>
+       <div className='flex flex-wrap items-start gap-6 mb-8 w w-full'>
          {/* recent booking */}
-         <div className='flex flex-wrap items-start gap-6 mb-8 w w-full'>
+         <div className='p-4 md:p-6 border border-borderColor rounded-md max-w-lg w-full'>
             <h1 className='text-lg font-medium'>Recent Bookings</h1>
             <p className='text-gray-500'>Latest customer bookings</p>
             {data.recentBookings.map((booking,index)=>(
@@ -70,7 +70,11 @@ const Dashboard = () => {
          </div>
 
          {/* monthly revenue */}
-         <div></div>
+         <div className='p-4 md:p-6 mb-6 border border-borderColor rounded-md w-full md:max-w-xs'>
+            <h1 className='text-lg font-medium'>Monthly Revenue</h1>
+            <p className='text-gray-500'>Revenue for current month</p>
+            <p className='text-3xl mt-6 font-semibold text-primary'>{currency}{data.monthlyRevenue}</p>
+         </div>
 
        </div>
 
